@@ -18,5 +18,6 @@ COPY protocol_key.txt ./
 
 EXPOSE 9987/udp
 
+RUN mkdir -p /opt/teaspeak/db
 CMD ["./TeaSpeakServer"]
 
