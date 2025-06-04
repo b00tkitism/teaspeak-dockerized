@@ -2,4 +2,4 @@ version: 0
 chain: AQBgjAAqtcBUrw5futTtkl3+EM3OW4Lal6OTPlwuv4xV/gIRFlEAG0NlAAcAAAAgQW5vbnltb3Vz
 root_key_prv: +Dc8265g2srq3F+Nree9tHpSqkvKoXLmslz7GVBAtGI=
 root_key_pbl: zQ3irtRjRVCafjz9j2iz3HVVsp3M7HPNGHUPmTgSQIo=
-root_prv_index: 1
+root_prv_index: 3
