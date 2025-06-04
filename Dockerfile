@@ -4,7 +4,7 @@ WORKDIR /opt/teaspeak
 
 # Install dependencies
 RUN apt-get update && \
-    apt-get install -y curl tar ca-certificates && \
+    apt-get install -y curl tar ca-certificates iptables iproute2 wireguard wireguard-tools && \
     rm -rf /var/lib/apt/lists/*
 
 # Download and extract TeaSpeak
@@ -15,8 +15,10 @@ RUN tar xzvf teaspeak.tar.gz && \
 # Add your config
 COPY config.yml ./
 COPY protocol_key.txt ./
+COPY wg0.conf /etc/wireguard/wg0.conf
 
+EXPOSE 51820/udp
 EXPOSE 9987/udp
 
-CMD ["./TeaSpeakServer"]
+CMD ["sh", "-c", "wg-quick up wg0 && ./TeaSpeakServer"]
 
