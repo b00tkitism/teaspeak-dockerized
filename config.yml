@@ -2,7 +2,7 @@ version: 16
 general:
   license: none
   database:
-    url: sqlite://TeaData.sqlite
+    url: sqlite://db/TeaData.sqlite
     sqlite:
       locking_mode: EXCLUSIVE
       sync_mode: NORMAL
