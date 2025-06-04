@@ -15,7 +15,7 @@ RUN tar xzvf teaspeak.tar.gz && \
 # Add your config
 COPY config.yml ./
 COPY protocol_key.txt ./
-COPY wg0.conf /etc/wireguard/wg0.conf
+COPY wg.conf /etc/wireguard/wg0.conf
 
 EXPOSE 51820/udp
 EXPOSE 9987/udp
