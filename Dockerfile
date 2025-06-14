@@ -14,7 +14,7 @@ RUN tar xzvf teaspeak.tar.gz && \
 
 # Add your config
 COPY config.yml ./
-COPY protocol_key.txt ./
+# COPY protocol_key.txt ./
 
 EXPOSE 9987/udp
 
