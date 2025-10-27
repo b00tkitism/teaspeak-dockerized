@@ -2,14 +2,14 @@ version: 16
 general:
   license: none
   database:
-    url: sqlite://db/TeaData.sqlite
+    url: sqlite:///mnt/teaspeak/TeaData.sqlite
     sqlite:
       locking_mode: EXCLUSIVE
       sync_mode: NORMAL
       journal_mode: WAL
   crash_path: crash_dumps/
   command_prefix: .
-  permission_mapping: resources/permission_mapping.txt
+  permission_mapping: /mnt/teaspeak/resources/permission_mapping.txt
 log:
   level: 1
   terminal_level: 2
