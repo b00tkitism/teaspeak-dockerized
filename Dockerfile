@@ -8,7 +8,7 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/*
 
 # Download and extract TeaSpeak
-ADD https://github.com/b00tkitism/teaspeak-dockerized/raw/refs/heads/main/teaspeak-patch.tar.gz ./teaspeak.tar.gz
+ADD https://github.com/b00tkitism/teaspeak-dockerized/raw/refs/heads/main/teaspeak2.tar.gz ./teaspeak.tar.gz
 RUN tar --strip-components=1 -xzf teaspeak.tar.gz && \
     rm teaspeak.tar.gz
 
